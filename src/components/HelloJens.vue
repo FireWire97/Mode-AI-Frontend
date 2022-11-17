@@ -1,35 +1,26 @@
 <template>
-    <div class="container">
-        <div class="card">
+    <div :style="{ backgroundColor: backgroundcolor}" id="c" class="container">
+        <div id="wrapper" class="card">
             <header class="card-header">
                 <p class="card-header-title">
-                    Card header
+                    <i id="text">{{text}}</i>
                 </p>
             </header>
             <div class="card-content">
                 <b-field label="Select a date">
                     <b-datepicker
-                        placeholder="Click to select..."
+                        placeholder="Select date of the meeting..."
                         v-model="dates"
                         range>
                     </b-datepicker>
                 </b-field>
             </div>
             <footer class="card-footer">
-                <!-- <a href="#" class="card-footer-item">Save</a> -->
-                <b-button type="is-warning" @click="clickMe">Warning</b-button>
-                <a href="#" class="card-footer-item">Edit</a>
-                <a href="#" class="card-footer-item">Delete</a>
+                <b-button type="is-warning" @click="clickMe">Done!</b-button>
             </footer>  
         </div>
     </div>
 </template>
-
-  
-
-<!-- <style>
-margin: 20;
-</style> -->
 
 <script>
 import {filtering} from '@/api/filtering.js'
@@ -37,6 +28,7 @@ import {filtering} from '@/api/filtering.js'
 export default {
   data() {
       return {
+          text: "Hi Jens! When would you like to meet?",
           dates: []
       }
   },
@@ -50,24 +42,33 @@ export default {
 }
 </script>
 
-  
-
-<!-- <template>
-    <section>
-      <div class="buttons">
-        <b-button type="is-warning">Warning</b-button>
-      </div>
-    </section>
-  </template>
+<style>
 
 
-  
-  <script>
-    export default {
-        methods: {
-            clickMe() {
-                this.$buefy.notification.open('Clicked!!')
-            }
-        }
+
+    #c
+    {
+        padding-left:500px;
     }
-  </script> -->
+    #wrapper
+    {
+        width: 50%;
+        border-radius: 20px;
+        margin-top: 200px;
+        border: 5px solid #f58523;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        background-color: #ffe0c5;
+    }
+    #text
+    {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body{
+        /* background-color: light#f6ac6c; */
+        background-color: #f7ba84;
+    }
+
+    
+</style>
