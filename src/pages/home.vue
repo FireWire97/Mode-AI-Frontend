@@ -1,31 +1,15 @@
 <template>
-    <div :style="{ backgroundColor: backgroundcolor}" id="c" class="container">
-        <div id="wrapper" class="card">
-            <header class="card-header">
-                <p class="card-header-title">
-                    <i id="text">{{text}}</i>
-                </p>
-            </header>
-            <div class="card-content">
-                <b-field label="Select a date">
-                    <b-datepicker
-                        placeholder="Select date of the meeting..."
-                        v-model="dates"
-                        range>
-                    </b-datepicker>
-                </b-field>
-            </div>
-            <footer class="card-footer">
-                <b-button type="is-warning" @click="clickMe">Done!</b-button>
-            </footer>  
-        </div>
+    <div id="c" class="container">
+        <calendar :text="text" ></calendar>
     </div>
 </template>
 
 <script>
 import {filtering} from '@/api/filtering.js'
+import calendar from '@/pages/home/calendar.vue'
 
 export default {
+  components: {calendar},
   data() {
       return {
           text: "Hi Jens! When would you like to meet?",

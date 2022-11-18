@@ -1,5 +1,5 @@
 <template>
-    <div :style="{ backgroundColor: backgroundcolor}" id="c" class="container">
+    <div id="c" class="container">
         <div id="wrapper" class="card">
             <header class="card-header">
                 <p class="card-header-title">
@@ -7,16 +7,17 @@
                 </p>
             </header>
             <div class="card-content">
-                <b-field label="Select a date">
+                <!-- <b-field label="Select a date">
                     <b-datepicker
                         placeholder="Select date of the meeting..."
                         v-model="dates"
                         range>
                     </b-datepicker>
-                </b-field>
+                </b-field> -->
             </div>
             <footer class="card-footer">
-                <b-button type="is-warning" @click="clickMe">Done!</b-button>
+                <b-button type="is-warning" @click="clickMe">Lazy</b-button>
+                <b-button type="is-warning" @click="clickMe">Adventurous</b-button>
             </footer>  
         </div>
     </div>
@@ -28,7 +29,7 @@ import {filtering} from '@/api/filtering.js'
 export default {
   data() {
       return {
-          text: "Hi Jens! When would you like to meet?",
+          text: "How are you feeling today?",
           dates: []
       }
   },
@@ -36,7 +37,7 @@ export default {
         clickMe() {
             let response = filtering(null)
             console.log(response)
-            this.$route.push('/location')
+            this.$router.push('/')
             // this.$buefy.notification.open('Clicked!!')
         }
     }

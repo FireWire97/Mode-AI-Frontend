@@ -1,17 +1,18 @@
+
 <template>
-  <div id="app"><HelloJens /></div>
+  <div id="app" class="has-background-light">
+    <p>DUPA</p>
+    <div class="container is-fluid">
+      <router-view/>
+    </div>
+  </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-import HelloJens from "./components/HelloJens.vue"
 
 export default {
   name: 'App',
-  components: {
-    // HelloWorld
-    HelloJens
-  }
+  components: {}
 }
 </script>
 

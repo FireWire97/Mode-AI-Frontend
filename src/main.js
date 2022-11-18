@@ -1,22 +1,40 @@
 import Vue from 'vue'
 import App from './App.vue'
-// import createRouter from 'vue-router'
-// import routes from './routes'
-
+// import VueRouter from 'vue-router'
+import router from './routes.js'
+import {routes} from './routes'
 import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
 
-// const router = createRouter({
+// const Home = { template: '<div>Home</div>' }
+// const Location = { template: '<div>Location</div>' }
+
+
+
+// const routes = [
+//   { path: '/', component: Home },
+//   { path: '/location', component: Location },
+// ]
+
+// const router = VueRouter.createRouter({
+//   history: VueRouter.createWebHashHistory(),
 //   routes,
-//   linkActiveClass: 'active'
-// });
+// })
+
 
 Vue.use(Buefy)
 Vue.config.productionTip = false
 
-new Vue({
+// Vue.use(router)
+// // App.mount('#App')
+
+
+let app = new Vue({
   render: h => h(App),
+  router
 }).$mount('#app')
+
+global.vm = app;
 
 // new Vue({
 //   el: "#app",
