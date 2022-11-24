@@ -33,11 +33,12 @@ export default {
 
     #c
     {
-        padding-left:500px;
+        padding-right:200px;
+        width: 600px;
     }
     #wrapper
     {
-        width: 50%;
+        /* width: 300px; */
         border-radius: 20px;
         margin-top: 200px;
         border: 5px solid #f58523;

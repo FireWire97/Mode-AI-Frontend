@@ -5,6 +5,7 @@ Vue.use(VueRouter)
 
 import home from "@/pages/home.vue"
 import location from "@/components/SelectLocation.vue"
+import list from "@/pages/list.vue"
 
 
 const routes = [
@@ -19,6 +20,12 @@ const routes = [
         name: "Location",
         meta: {title: 'Mood for today'},
         component: location
+    },
+    {
+        path: "/list",
+        name: "List",
+        meta: {title: 'List of Results'},
+        component: list
     }
 
 ];

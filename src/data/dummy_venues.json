@@ -1,0 +1,37 @@
+[
+    {   
+        "id": 1, 
+        "veunue": "Imperial Hotel", 
+        "room": "Room 1", 
+        "date": "2016-10-15 13:43:27", 
+        "price": "2000" 
+    },
+    { 
+        "id": 2, 
+        "veunue": "Scandic Sluseholmen", 
+        "room": "Room 23", 
+        "date": "2016-12-15 06:00:53", 
+        "price": "3600" 
+    },
+    { 
+        "id": 3, 
+        "veunue": "Phoenix Copenhagen", 
+        "room": "Room Blue", 
+        "date": "2016-04-26 06:26:28", 
+        "price": "1780" 
+    },
+    { 
+        "id": 4, 
+        "veunue": "Mogens Dahl Koncertsal", 
+        "room": "Main Hall", 
+        "date": "2016-04-10 10:28:46", 
+        "price": "5000" 
+    },
+    { 
+        "id": 5, 
+        "veunue": "IDA Conference Centre", 
+        "room": "Room 2", 
+        "date": "2016-12-06 14:38:38", 
+        "price": "2300" 
+    }
+]

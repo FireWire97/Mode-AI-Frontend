@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "hubli_id": 1,
+        "hubli_url": "lol",
+        "aname": "lol",
+        "descr": "lol",
+        "addres": "lol",
+        "longitude": 12.3123,
+        "latitude": 21.37,
+        "has_parking": 1,
+        "has_highspeed_wifi": 1,
+        "has_business_center": 1,
+        "has_laundry_service": 1,
+        "has_disabled_facilities": 1,
+        "has_bedrooms": 1,
+        "has_av_technician": 1,
+        "has_projector_big_screen": 1,
+        "has_flipchart": 1,
+        "has_blackout_equipment": 1,
+        "has_restaurant": 1,
+        "has_bar": 1,
+        "has_gym": 1,
+        "has_spa": 1,
+        "has_swimming_pool": 1,
+        "opening_hour": "12:00",
+        "closing_hour": "20:00",
+        "opening_day_of_week": "Monday",
+        "closing_day_of_week": "Friday"
+    }
+]
+
+    

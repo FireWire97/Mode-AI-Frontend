@@ -1,6 +1,6 @@
 <template>
-    <div id="c" class="container">
-        <div id="wrapper" class="card">
+    <div id="l" class="container">
+        <div id="wrapper2" class="card">
             <header class="card-header">
                 <p class="card-header-title">
                     <i id="text">{{text}}</i>
@@ -17,7 +17,7 @@
             </div>
             <footer class="card-footer">
                 <b-button type="is-warning" @click="clickMe">Lazy</b-button>
-                <b-button type="is-warning" @click="clickMe">Adventurous</b-button>
+                <b-button type="is-warning" style="{ left-padding: 100px}"  @click="clickMe">Adventurous</b-button>
             </footer>  
         </div>
     </div>
@@ -37,7 +37,7 @@ export default {
         clickMe() {
             let response = filtering(null)
             console.log(response)
-            this.$router.push('/')
+            this.$router.push('/list')
             // this.$buefy.notification.open('Clicked!!')
         }
     }
@@ -48,13 +48,16 @@ export default {
 
 
 
-    #c
+    #l
     {
-        padding-left:500px;
+        margin-top: -100px;
+        padding-right:200px;
+        width: 600px;
     }
-    #wrapper
+    #wrapper2
     {
-        width: 50%;
+        width: 65%;
+        
         border-radius: 20px;
         margin-top: 200px;
         border: 5px solid #f58523;

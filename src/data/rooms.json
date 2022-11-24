@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "venue_id": 1,
+        "room_name": "Jan Pawel",
+        "size": "wielki",
+        "price_per_day": 21.37,
+        "total_guests": 2137,
+        "ushape_room": 2,
+        "class_room": 1,
+        "board_room": 0,
+        "reception_room": 1,
+        "banquet_room": 2,
+        "theatre_room": 2
+    }
+]
+
+
+ 

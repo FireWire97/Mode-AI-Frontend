@@ -1,8 +1,8 @@
 
 <template>
   <div id="app" class="has-background-light">
-    <p>DUPA</p>
-    <div class="container is-fluid">
+    <div id="logo" class="container is-fluid">
+      <img alt="Mode AI Logo" src="./assets/logo.png">
       <router-view/>
     </div>
   </div>
@@ -23,9 +23,15 @@ body {
   padding: 0px;
 
   width: 100%;
+
 }
 #app {
   display: flex;
   height: 100%;
+}
+
+#logo{
+  /* width: 600px; */
+  padding-left: 350px;
 }
 </style>
