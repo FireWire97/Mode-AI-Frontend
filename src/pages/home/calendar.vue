@@ -31,7 +31,7 @@ export default {
     methods: {
         clickMe: function() {
             console.log('click')
-            this.$router.push('/location')
+            this.$router.push('/list')
         }
     }
 }

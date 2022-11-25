@@ -8,6 +8,7 @@
         
         <div id="c" class="container">
             <calendar :text="text" ></calendar>
+            <!-- <b-datetimepicker v-model="datetime" inline></b-datetimepicker> -->
         </div>
     </div>
 </template>
@@ -21,6 +22,7 @@ export default {
   data() {
       return {
           text: "Hi Jens! When would you like to meet?",
+        //   datetime: new Date()
           dates: []
       }
   },
@@ -28,11 +30,12 @@ export default {
         clickMe() {
             let response = filtering(null)
             console.log(response)
-            this.$route.push('/location')
+            this.$route.push('/list')
             // this.$buefy.notification.open('Clicked!!')
         }
     }
 }
+
 </script>
 
 <style>
@@ -43,11 +46,12 @@ export default {
     {
         /* padding-right:200px; */
         width: 600px;
+        margin-bottom: 100px;
         
     }
     #wrapper
     {
-        margin-left: 250px;
+        /* margin-left: 50px; */
         /* width: 300px; */
         border-radius: 20px;
         margin-top: 100px;
@@ -68,7 +72,7 @@ export default {
     #logo-wrapper
     {
         width: 2000px;
-        margin-left: 200px;
+        /* margin-left: 200px; Uncomment that shit*/
         /* justify-self:auto; */
         /* padding-left: 300px; */
         
